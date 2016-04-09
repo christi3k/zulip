@@ -20,6 +20,7 @@ Contents:
    queuing
    schema-migrations
    front-end-build-process
+   roadmap
 
 Indices and tables
 ==================
