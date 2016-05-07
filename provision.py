@@ -184,6 +184,7 @@ def main():
     run(["tools/do-destroy-rebuild-database"])
     run(["tools/postgres-init-test-db"])
     run(["tools/do-destroy-rebuild-test-database"])
+    run(["cp", "scripts/start-rundev", "/home/vagrant"])
     # Install the latest npm.
     run(["sudo", "npm", "install", "-g", "npm"])
     # Run npm install last because it can be flaky, and that way one

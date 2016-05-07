@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /srv/zulip
+source /srv/zulip-venv/bin/activate
+./tools/run-dev.py --interface=''
