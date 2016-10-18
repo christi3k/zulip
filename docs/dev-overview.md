@@ -18,6 +18,10 @@ environment there (we'd recommend the
 [install directly][rtd-install-direct] approach),
 and connect to the development environment over SSH.
 
+While Zulip itself is built and deployed on Ubuntu, the Zulip developer
+environment is cross-platform and can be installed on most all current
+operating systems. Use the operating system that you are most familiar with.
+
 ### For OS X
 
 The [Vagrant environment setup][rtd-vagrant-setup] is recommended for all
