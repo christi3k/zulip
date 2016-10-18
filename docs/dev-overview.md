@@ -1,40 +1,50 @@
 # Development environment installation
 
 Zulip support a wide range of ways to install the Zulip development
-environment.  We recommend using the Vagrant development environment,
-since it is easiest to setup and uninstall.
+environment. **We recommend using the [Vagrant development
+environment][rtd-vagrant-setup], since it is easiest to
+setup and uninstall.**
 
-If you have a very slow network connection, however, you may want to
-avoid using Vagrant (which involves downloading an Ubuntu image) and
-either [install directly](install-ubuntu-without-vagrant-dev.html) or
-use [the manual install process](install-generic-unix-dev.html)
-instead.  Note that those options only support Linux.
+If you have a very slow network connection, however, you may want to avoid
+using Vagrant (which involves downloading an Ubuntu image) and
+either [install directly][rtd-install-direct] if you are
+using Ubuntu 14.04 or 16.04 or else use [the manual install
+process][rtd-install-direct] instead. Note that those options only
+support Linux-based operating systems and won't work with OS X or Windows.
 
 An alternative option with poor network connectivity is to rent a
 cloud server (with at least 2GB of RAM), install the development
 environment there (we'd recommend the
-[install directly](install-ubuntu-without-vagrant-dev.html) approach),
+[install directly][rtd-install-direct] approach),
 and connect to the development environment over SSH.
 
-#### For OS X
+### For OS X
 
-* [Detailed tutorial for Vagrant development environment](dev-env-first-time-contributors.html).  Recommended for first-time contributors.
-* [Brief installation instructions for Vagrant development environment](brief-install-vagrant-dev.html)
-* [Using Docker (experimental)](install-docker-dev.html)
+The [Vagrant environment setup][rtd-vagrant-setup] is recommended for all
+contributors. If you are already using Docker and like it, you can try [using
+Docker (experimental)](install-docker-dev.html), but know this isn't officially
+supported by Zulip.
 
-#### For LINUX/ Other UNIX Platforms
+### For Ubuntu
 
-* [Detailed tutorial for Vagrant development environment](dev-env-first-time-contributors.html).  Recommended for first-time contributors.
-* [Brief installation instructions for Vagrant development environment](brief-install-vagrant-dev.html)
-* [Installing on Ubuntu 14.04 Trusty or 16.04 Xenial directly](install-ubuntu-without-vagrant-dev.html).
-  This offers the most convenient developer experience, but is difficult to uninstall.
-* [Installing manually on other UNIX platforms](install-generic-unix-dev.html)
-* [Using Docker (experimental)](install-docker-dev.html)
+The [Vagrant environment setup][rtd-vagrant-setup] is recommended for all
+contributors. If you prefer to work without Vagrant, you can [install directly
+on Ubuntu][rtd-install-direct]. You need Ubuntu 14.04 Trusty or Ubuntu 16.04
+Xenial for direct installation to work. If you are already using Docker and
+like it, you can try [using Docker (experimental)](install-docker-dev.html),
+but know this isn't officially supported by Zulip.
 
-#### For Windows
+### For Other Linux/Unix-based Platforms
 
-* [Detailed tutorial for Vagrant development environment](dev-env-first-time-contributors.html).  Recommended for first-time contributors.
-* [Brief installation instructions for Vagrant development environment](brief-install-vagrant-dev.html)
+You'll have to [install the developer environment
+manually][rtd-install-generic]. If you are already using Docker and like it,
+you can try [using Docker (experimental)](install-docker-dev.html), but know
+this isn't officially supported by Zulip.
+
+### For Windows
+
+The [Vagrant environment setup][rtd-vagrant-setup] is recommended for all
+contributors and is the only supported way to install on Windows.
 
 ## Using the Development Environment & Testing
 
@@ -44,3 +54,6 @@ to read these documents to learn how to use it:
 * [Using the Development Environment](using-dev-environment.html)
 * [Testing](testing.html)
 
+[rtd-vagrant-setup]: dev-env-first-time-contributors.html
+[rtd-install-direct]: install-ubuntu-without-vagrant-dev.html
+[rtd-install-generic]: install-generic-unix-dev.html
